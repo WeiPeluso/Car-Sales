@@ -11,14 +11,7 @@ const AdditionalFeature = props => {
     </li>
   );
 };
-const mapStateToProps = state =>{
+// const mapStateToProps = state =>{
 
 
-  return{
-    additionalPrice: state.featuresReducer.additionalPrice,
-    car: state.featuresReducer.car,
-    additionalFeatures: state.featuresReducer.additionalFeatures
-  }
-}
-
-export default connect(mapStateToProps,{addFeature})(AdditionalFeature);
+export default connect(null,{addFeature})(AdditionalFeature);
